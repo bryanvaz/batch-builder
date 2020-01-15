@@ -5,6 +5,8 @@ LABEL version="0.1"
 
 ENV AWS_VERSION 1.17.2
 
+ENV ENTRYPOINT entrypoint.sh
+
 # Install C++ Build Deps
 RUN apt-get update &&\
     apt-get install -y \

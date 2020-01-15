@@ -6,13 +6,13 @@ Used in conjuction with AWS Batch or Fargate to automate long-running/manycore b
 
 ## Required input variables
 
-* `S3_SOURCE_BUNDLE`: URL of zipped bundle to start the build
-* `ENTRYPOINT`: The filename of the entrypoint job script relative to the root of the source bundle
+* `SOURCE_BUNDLE` (*required): URL of zipped bundle to start the build
+* `ENTRYPOINT` (default: `entrypoint.sh`): The filename of the entrypoint job script relative to the root of the source bundle
 
 ## Bootstrap process
-1. `S3_SOURCE_BUNDLE` is downloaded
+1. `SOURCE_BUNDLE` is downloaded
 2. Source Bundle is unzipped into `/app`
-3. The file `${S3_SOURCE_BUNDLE}/${ENTRYPOINT}` is executed
+3. The file `${SOURCE_BUNDLE}/${ENTRYPOINT}` is executed
 
 ## Included Build Dependancies
 * AWS CLI
@@ -43,6 +43,7 @@ Used in conjuction with AWS Batch or Fargate to automate long-running/manycore b
 * Add native support for KMS encrypted environment variables 
 * Add multiple versions of dependancies to reduce image size
 * Auto-build on new AWS or dependancy versions
+* Add support for other zip/tar types
 
 
 ## Author
