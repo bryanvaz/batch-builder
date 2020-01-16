@@ -14,7 +14,7 @@ Used in conjuction with AWS Batch or Fargate to automate long-running/manycore b
 2. Source Bundle is unzipped into `/app`
 3. The file `${SOURCE_BUNDLE}/${ENTRYPOINT}` is executed
 
-## Included Build Dependancies
+## Included Build Dependencies
 * AWS CLI
 * Git
 * Python 2 & 3 (with extra utils & pip)
