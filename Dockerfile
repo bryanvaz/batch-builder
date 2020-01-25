@@ -56,7 +56,7 @@ RUN apt-get update && \
     apt-get -y clean && \
     apt-get -y autoclean && \ 
     apt-get -y autoremove && \
-    pip3 install awscli==${AWS_VERSION} --upgrade --user
+    pip3 install awscli --upgrade
 
 ################################################
 # Change non-root User
