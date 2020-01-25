@@ -38,6 +38,7 @@ Used in conjuction with AWS Batch or Fargate to automate long-running/manycore b
 * `curl`
 * `bc`
 * `time`
+* `zip`
 
 ## TODO
 * Add native support for KMS encrypted environment variables 

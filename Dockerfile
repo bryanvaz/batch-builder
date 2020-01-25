@@ -38,6 +38,7 @@ RUN apt-get update &&\
       rsync \
       curl \
       bc \
+      zip \
       && \
     apt-get -y clean && \
     apt-get -y autoclean && \ 
